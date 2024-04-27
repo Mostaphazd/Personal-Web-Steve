@@ -1,0 +1,100 @@
+body.login-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333333;
+  font-family: "Comic Sans MS", cursive, Arial, sans-serif;
+  color: #cccccc;
+}
+
+.container {
+  background-color: #444444;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.form-wrapper {
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-info {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.fa {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.primary-button,
+.secondary-button {
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  padding: 5px;
+  background: #666666;
+  color: #cccccc;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Comic Sans MS", cursive, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.secondary-button {
+  margin-left: 10px;
+}
+
+.form-link a {
+  color: #cccccc;
+  text-decoration: none;
+  font-family: "Comic Sans MS", cursive, Arial, sans-serif;
+}
+
+.form-link a:hover {
+  color: #ffffff;
+}

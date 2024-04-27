@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/sign.css" />
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico" />
+  </head>
+  <body class="login-page">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="logo">
+          <img src="../images/logos/logo.png" alt="Website Logo" />
+        </div>
+        <h1 class="form-title">SignUp</h1>
+        <p class="form-info">Here you create your account to signUp</p>
+        <form action="../BE/SignUp.php" method="POST" id="signup-form">
+          <div class="form-group">
+            <label for="un" class="form-label">Username</label>
+            <div class="input-wrapper">
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <input
+                type="text"
+                name="username"
+                class="form-input"
+                id="uname" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fn" class="form-label">First Name</label>
+            <div class="input-wrapper">
+              <i class="fa fa-address-book" aria-hidden="true"></i>
+              <input type="text" name="firstname" class="form-input" id="fn" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ln" class="form-label">Last Name</label>
+            <div class="input-wrapper">
+              <i class="fa fa-address-book-o" aria-hidden="true"></i>
+              <input type="text" name="lastname" class="form-input" id="ln" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="em" class="form-label">Email</label>
+            <div class="input-wrapper">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="text" name="email" class="form-input" id="em" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-input" id="dob" name="dob" />
+          </div>
+          <div class="form-group">
+            <label for="pass" class="form-label">Password</label>
+            <div class="input-wrapper">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input
+                type="password"
+                name="password"
+                class="form-input"
+                id="pass" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cpass" class="form-label">Confirm Password</label>
+            <div class="input-wrapper">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input
+                type="password"
+                name="confirmpassword"
+                class="form-input"
+                id="cpass" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Gender</label>
+            <div class="input-wrapper">
+              <input type="radio" name="sex" checked id="male" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="sex" id="female" value="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="button-group">
+            <button type="button" class="primary-button" onclick="sign_up()">
+              SignUp
+            </button>
+            <button type="button" class="secondary-button" onclick="Reset()">
+              Cancel
+            </button>
+          </div>
+          <p class="form-link">
+            Already have an account? <a href="../index.php">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      function sign_up() {
+        let un = document.getElementById("uname").value;
+        let pass = document.getElementById("pass").value;
+        let cpass = document.getElementById("cpass").value;
+        let fn = document.getElementById("fn").value;
+        let ln = document.getElementById("ln").value;
+        let email = document.getElementById("em").value;
+        let date = document.getElementById("dob").value;
+        if (
+          un === "" ||
+          pass === "" ||
+          cpass === "" ||
+          fn === "" ||
+          ln === "" ||
+          email === "" ||
+          date === ""
+        ) {
+          alert("Arguments missing!");
+        } else if (pass !== cpass) {
+          alert("Passwords do not match!");
+          document.getElementById("pass").value = "";
+          document.getElementById("cpass").value = "";
+        } else if (pass.length < 8) {
+          alert("Password must be at least 8 characters!");
+        } else {
+          document.getElementById("signup-form").submit();
+        }
+      }
+
+      function Reset() {
+        document.getElementById("uname").value = "";
+        document.getElementById("fn").value = "";
+        document.getElementById("ln").value = "";
+        document.getElementById("em").value = "";
+        document.getElementById("pass").value = "";
+        document.getElementById("cpass").value = "";
+        document.getElementById("dob").value = "";
+      }
+    </script>
+  </body>
+</html>

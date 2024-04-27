@@ -1,0 +1,154 @@
+body {
+  font-family: cursive, sans-serif;
+  background-color: rgb(109, 108, 108);
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.project {
+  background-color: #cccccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  flex: 1 1 300px;
+}
+
+.project-info {
+  text-align: justify;
+}
+
+.project-info p {
+  margin-bottom: 10px;
+}
+
+.project-info img.img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.listing-info {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 50px;
+  border-radius: 30px;
+}
+
+.link-display {
+  color: white;
+  text-decoration: none;
+}
+.listing-info:hover {
+  background-color: #444;
+  color: #fff;
+  border-color: #444;
+}
+.certificate-section {
+  background-color: #cccccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-section h1 {
+  margin-bottom: 10px;
+}
+
+.certificate-section hr {
+  border-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.certificate-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certificate-section ul li {
+  margin-bottom: 10px;
+}
+
+.navig {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+
+  box-shadow: 0.1px 5px grey;
+}
+
+.dropdown {
+  display: inline-block;
+}
+.dropdown button {
+  margin-left: 5px;
+  font-size: 18px;
+  font-family: cursive;
+  border-radius: 10px;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.dropdown a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.dropdown .content {
+  margin-left: 5px;
+  border-radius: 10px;
+  font-family: cursive;
+  display: none;
+  background-color: hsl(0, 0%, 0%);
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content {
+  display: block;
+}
+.dropdown:hover button {
+  background-color: hsl(0, 0%, 60%);
+}
+.dropdown a:hover {
+  background-color: grey;
+}
+
+.contact {
+  margin-top: 16px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: grey;
+}
+.button {
+  font-size: 20px;
+  font-family: cursive;
+  background-color: grey;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: grey;
+  transition: 600ms;
+  border-radius: 35px;
+}
