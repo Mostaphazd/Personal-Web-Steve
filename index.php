@@ -5,7 +5,7 @@ session_start();
 
 <head>
   <link rel="stylesheet" href="CSS/login.css">
-  <link rel="icon" type="image/x-icon" href="../icon/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
 </head>
 
 <body class="login-page">
