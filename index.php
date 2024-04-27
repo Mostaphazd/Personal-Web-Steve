@@ -16,7 +16,7 @@ session_start();
       </div>
       <h1 class="form-title">Welcome to Mostapha's Website</h1>
       <p class="form-info">Please login to enter</p>
-      <form action="../BE/login.php" method="POST" id="login-form">
+      <form action="BE/login.php" method="POST" id="login-form">
         <div class="form-group">
           <label for="uname" class="form-label">Username</label>
           <div class="input-wrapper">
