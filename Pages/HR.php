@@ -60,8 +60,8 @@ if (!$images) {
     <h3>Gallery:</h3>
     <div class="thumbnails">
         <?php foreach ($images as $image) : ?>
-            <a href="../HRprj/<?php echo $image; ?>" onclick="showOverlay(this); return false;">
-                <img src="../HRprj/<?php echo str_replace("Thumb", "", $image); ?>" alt="Thumbnail"/>
+            <a href="../images/HRprj/<?php echo $image; ?>" onclick="showOverlay(this); return false;">
+                <img src="../images/HRprj/<?php echo str_replace("Thumb", "", $image); ?>" alt="Thumbnail"/>
             </a>
         <?php endforeach; ?>
     </div>
