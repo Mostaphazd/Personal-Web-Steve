@@ -59,12 +59,12 @@ if (!$images) {
     <div class="gallery">
     <h3>Gallery:</h3>
     <div class="thumbnails">
-        <?php foreach ($images as $image) : ?>
-            <a href="../images/HRprj/<?php echo $image; ?>" onclick="showOverlay(this); return false;">
-                <img src="../images/HRprj/<?php echo str_replace("Thumb", "", $image); ?>" alt="Thumbnail"/>
-            </a>
-        <?php endforeach; ?>
-    </div>
+    <?php foreach ($images as $image) : ?>
+        <a href="<?php echo $_SERVER['DOCUMENT_ROOT']; ?>/images/HRprj/<?php echo $image; ?>" onclick="showOverlay(this); return false;">
+            <img src="<?php echo $_SERVER['DOCUMENT_ROOT']; ?>/images/HRprj/<?php echo str_replace("Thumb", "", $image); ?>" alt="Thumbnail"/>
+        </a>
+    <?php endforeach; ?>
+</div>
     <div class="gallery-overlay">
         <div class="back-button">
             <a href="../Pages/HR.php">Back</a>
